@@ -1,34 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aula08</title>
 </head>
-<body>
 
+<body>
     <div style="text-align: center;">
-        <button onclick="playPause()">Play/Pause</button> 
-        <br><br>
-        <video id="video1" width="600px">
+        <h3>Pato</h3>
+        <video controls width="600px">
             <source src="./img/duckVid.mp4">
         </video>
 
     </div>
 
-    <script> 
-        var myVideo = document.getElementById("video1"); 
-
-        function playPause() { 
-        if (myVideo.paused) 
-            myVideo.play(); 
-        else 
-            myVideo.pause(); 
-        } 
-
-    </script>
-
-    <h3>Velha vs Galo ao som de Numb Linkin Park</h3>
-    <iframe src="https://www.youtube.com/watch?v=MxjIeysEttU" ></iframe>
-</body>
+    <div style="text-align: center; padding: 50px;">
+        <a href="./youtube.html"><img height="100px" src="./img/Youtube_logo.png" alt="Youtube"></a>
+        <a href="./vimeo.html"><img height="100px" src="./img/VimeoLogo.png" alt="Vimeo"></a>
+    </div>
 </html>
