@@ -1,0 +1,31 @@
+body {
+    background-color: #b0afaf52;
+}
+
+h1 {
+    background-color: rgba(142, 102, 206, 0.955);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+
+h2 {
+    color: rgb(255, 150, 232);
+}
+
+td {
+    background-color: rgba(142, 102, 206, 0.955);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+p{
+    color: rgba(155, 10, 155, 0.647);
+}
