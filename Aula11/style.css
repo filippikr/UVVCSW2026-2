@@ -1,0 +1,156 @@
+.justify{
+    display: flex;
+    flex-direction: column;
+}
+
+.container0{
+    display: flex;
+    flex-wrap: wrap;
+    height: 80px;
+    width: 100%;
+    background-color: darkgray;
+    margin: 10px;
+    padding: 5px;
+    justify-content: flex-start;
+}
+
+.container1{
+    display: flex;
+    height: 80px;
+    width: 100%;
+    background-color: darkgray;
+    margin: 10px;
+    padding: 5px;
+    justify-content: flex-end;
+}
+
+.container2{
+    display: flex;
+    height: 80px;
+    width: 100%;
+    background-color: darkgray;
+    margin: 10px;
+    padding: 5px;
+    justify-content: center;
+}
+
+.container3{
+    display: flex;
+    height: 80px;
+    width: 100%;
+    background-color: darkgray;
+    margin: 10px;
+    padding: 5px;
+    justify-content: space-between;
+}
+
+.container4{
+    display: flex;
+    height: 80px;
+    width: 100%;
+    background-color: darkgray;
+    margin: 10px;
+    padding: 5px;
+    justify-content: space-around;
+}
+
+.item{
+    height: 60px;
+    width: 60px;
+    background-color: orange;
+    margin: 10px 5px 10px 5px;
+    border-radius: 20%;
+}
+
+/*====================================================================================*/
+
+.align{
+    display: flex;
+    flex-direction: row;
+}
+
+.container5{
+    display: flex;
+    flex-wrap: wrap;
+    height: 300px;
+    width: 100%;
+    background-color: darkgray;
+    margin: 10px;
+    padding: 5px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.container6{
+    display: flex;
+    flex-wrap: wrap;
+    height: 300px;
+    width: 100%;
+    background-color: darkgray;
+    margin: 10px;
+    padding: 5px;
+    justify-content: center;
+    align-items: center
+}
+
+.container7{
+    display: flex;
+    flex-wrap: wrap;
+    height: 300px;
+    width: 100%;
+    background-color: darkgray;
+    margin: 10px;
+    padding: 5px;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.container7 .itemAlign1
+{
+    height: auto;
+}
+.container7 .itemAlign2
+{
+    height: auto;
+}
+.container7 .itemAlign3
+{
+    height: auto;
+}
+
+.container8{
+    display: flex;
+    flex-wrap: wrap;
+    height: 300px;
+    width: 100%;
+    background-color: darkgray;
+    margin: 10px;
+    padding: 5px;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.itemAlign1{
+    height: 60px;
+    width: 60px;
+    background-color: orange;
+    border-radius: 8px;
+    margin: 10px 5px 10px 5px;
+}
+
+.itemAlign2{
+    height: 200px;
+    width: 60px;
+    background-color: orange;
+    border-radius: 8px;
+    margin: 10px 5px 10px 5px;
+}
+
+.itemAlign3{
+    height: 60px;
+    width: 60px;
+    background-color: orange;
+    border-radius: 8px;
+    margin: 10px 5px 10px 5px;
+}
+
