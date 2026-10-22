@@ -1,0 +1,167 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 20px 40px;
+}
+
+/* ---------- Quadrados (classe comum) ---------- */
+.quadrado {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 10px;
+    color: #333;
+}
+
+.linha {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* ---------- Cores (identificadores) ---------- */
+#vermelho {
+    background-color: red;
+}
+
+#verde {
+    background-color: green;
+}
+
+#azul {
+    background-color: blue;
+}
+
+#azul-escuro {
+    background-color: #1e3a5f;
+}
+
+#cinza,
+#exemplo-hover,
+#efeito1,
+#efeito2,
+#efeito3 {
+    background-color: #e6e6e6;
+}
+
+#cinza {
+    transition: background-color 0.3s;
+}
+
+#cinza:hover {
+    background-color: yellow;
+}
+
+/* ---------- Número no topo e frase no centro ---------- */
+.numero {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.frase {
+    font-size: 15px;
+}
+
+/* elementos que só aparecem no hover do quadrado */
+.revela {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.quadrado:hover .revela {
+    opacity: 1;
+}
+
+/* ---------- Exemplo de hover ---------- */
+#exemplo-hover {
+    transition: background-color 0.3s;
+}
+
+#exemplo-hover:hover {
+    background-color: yellow;
+}
+
+/* ---------- Três efeitos em formato de L ---------- */
+.grade-l {
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    gap: 10px;
+    width: fit-content;
+}
+
+#efeito1 {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#efeito2 {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#efeito3 {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#efeito1,
+#efeito2,
+#efeito3 {
+    transition: all 0.3s;
+}
+
+/* 1: só troca a cor da fonte */
+#efeito1:hover {
+    color: red;
+}
+
+/* 2: fundo amarelo, fonte vermelha e frase */
+#efeito2:hover {
+    background-color: yellow;
+    color: red;
+}
+
+/* 3: vira um círculo azul com fonte branca */
+#efeito3:hover {
+    background-color: #2f80ed;
+    color: white;
+    border-radius: 50%;
+    transform: scale(1.1);
+}
+
+/* ---------- Pseudo elementos ---------- */
+#texto-pseudo {
+    line-height: 1.5;
+}
+
+/* letra grande na mesma linha do texto: a base do "L" fica na base da 1ª linha */
+#texto-pseudo::first-letter {
+    font-size: 3.5em;
+    line-height: 0.8; /* evita que a letra deixe a 1ª linha muito alta */
+    font-weight: bold;
+}
+
+.destaque {
+    color: red;
+}
+
+.links a {
+    display: block;
+    margin-bottom: 6px;
+}
+
+.links a::before {
+    content: ">>> ";
+}
+
+.links a::after {
+    content: " [link]";
+}
